@@ -64,9 +64,11 @@ class MyHomePage extends StatelessWidget {
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
+          // extension method로 리팩토링 하기
           FloatingActionButton(
             onPressed: () {
               context.read<CounterCubit>().increment();
+              // context.read를 통해 엑세스한 CounterCubit 인스턴스에 .increment() 호출
             },
             child: Icon(Icons.add),
             heroTag: 'increment',
@@ -75,6 +77,7 @@ class MyHomePage extends StatelessWidget {
           FloatingActionButton(
             onPressed: () {
               context.read<CounterCubit>().decrement();
+              // context.read를 통해 엑세스한 CounterCubit 인스턴스에 .decrement() 호출
             },
             child: Icon(Icons.remove),
             heroTag: 'decrement',

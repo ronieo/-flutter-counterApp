@@ -7,6 +7,7 @@ class CounterState extends Equatable {
   });
 
   factory CounterState.initial() {
+    // initial state로 활용하기 위해
     return CounterState(counter: 0);
   }
 
