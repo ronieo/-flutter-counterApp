@@ -8,6 +8,7 @@
 # The following line activates a set of recommended lints for Flutter apps,
 # packages, and plugins designed to encourage good coding practices.
 # include: package:flutter_lints/flutter.yaml
+# 디폴트 린트룰을 개발과정에선 적용하지 않고 싶을 때
 
 linter:
   # The lint rules applied to this project can be customized in the
